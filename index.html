@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Majestic Thai Practice</title>
+</head>
+<body>
+  <h1 class="test">Majestic Thai Practice</h1>
+
+  <div class="js-menu-nav">
+
+  </div>
+
+  <div class="js-category-view">
+  </div>
+
+  <div class="js-order-view">
+  </div>
+
+  <script type="template" id="menu-nav-template">
+    <h2> item in here </h2>
+  </script>
+
+  <script type="template" id="category-view-template" >
+    <h2> <%category%> </h2>
+    <p>Category View Here</p>
+    <ul>
+    </ul>
+  </script>
+
+  <script type="template" id="category-item-template">
+    <p>Category Item View</p>
+    <h2> <% itemName %> </h2>
+    <h3> <% itemPrice %> </h3>
+    <button class="js-add">Add to Order</button>
+  </script>
+
+  <script type="template" id="order-view-template">
+    <h2>Order</h2>
+    <ul>
+    </ul>
+    <!-- $<%= totalPrice %> -->
+    <p>Total Price: </p>
+  </script>
+
+  <script type="template" id="order-item-template">
+
+  </script>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
